@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: #121212;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: scroll;
+    
+}
+
+#homi {
+    display: block; 
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 99;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+    border: none;
+    outline: none;
+    background-color: #1f1f1f;
+    color: #ff0266;
+    cursor: pointer; 
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px; 
+  }
+  
+  #homi:hover {
+    background-color: #555;
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#navbar{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+header{
+    display: flex;
+    position:fixed;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    font-family: "poppins", cursive;
+    background-color: #1f1f1f;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+}
+
+header a{
+    color: #e2e2e2;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+header h2{
+    padding: 20px;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+header nav a{
+    padding: 1px;
+    font-size: 17px;
+    margin: 0 8px;
+    transition: 0.3s;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+
+/* ----------MAIN CONTENT----------- */
+
+main{
+    margin-top: 100px;
+    min-height: calc(100vh - 12vh - 12vh);
+}
+
+
+
+.mainbox{
+    margin: 35px 20px 0px 20px;
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    padding: 5px 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+}
+
+.mainbox h1{
+    font-size: 50px;
+    color: #e3e3e3;
+    margin: 0 25px;
+}
+
+.mainbox span{
+    font-size: 35px;
+    color: #c4c4c4;
+    margin: 0 25px;
+}
+
+.maintext{
+    padding: 5px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maintext p{
+    color: #a6a2a3;
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:20px 0;
+    text-align: center;
+}
+
+.mainbtn a{
+    padding: 24px 10px;
+    margin: 12px 0;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent; 
+    border-radius: 8px;
+    color: #ff0266;
+    transition: 0.2;
+    transition-property: background;
+    border: 2px solid #ff0266;
+    height: 30px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.social{
+    padding: 30px 20px 0 20px;
+    font-size: 35px;
+}
+
+.social i{
+    color: #e3e3e3;
+    transition: 0.4s;
+    padding: 0 40px;
+}
+
+
+.brk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.function{
+    margin: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    flex-wrap: wrap;
+}
+
+.functionbox{
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+    transition: 0.2s;
+    transition-property: transform;
+    margin: 15px 4px;
+}
+
+.funcimg i{
+    font-size: 150px;
+    margin: 15px;
+    color: #ff0266;
+}
+
+.func-content{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    color: #e3e3e3;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.func-content h2{
+    margin: 0 0 20px 0;
+}
+
+.func-content a{
+    padding: 24px 10px;
+    margin: 12px 0;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent; 
+    border-radius: 8px;
+    color: #ff0266;
+    transition: 0.2;
+    transition-property: background;
+    border: 2px solid #ff0266;
+    height: 30px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.apk{
+    margin: 35px 20px 0px 20px;
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #e3e3e3;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+}
+
+.apk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apkimg{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apkimg img{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.apktxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.apktxt h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ff0266;
+    font-weight: 800;
+}
+
+.apktxt p{
+    align-self: flex-end;
+    margin: 20px 0 0 0;
+    color: #ada9aa;
+}
+
+.apktxt a{
+    padding: 24px 10px;
+    margin: 50px 0;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent; 
+    border-radius: 8px;
+    color: #ff0266;
+    transition: 0.2;
+    transition-property: background;
+    border: 2px solid #ff0266;
+    height: 30px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-family: "poppins", cursive;
+    background-color: #1f1f1f;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+    margin-top: 20px;
+    color: #e3e3e3;
+    height: 10vh;
+}
+
+
+/* ----------------------------------------------- */
+
+header nav a:hover{
+    color: #afabb4;
+    transform: scale(1.1);
+}
+
+.mainbtn a:hover{
+    background-color: #ff0266;
+    font-weight: 600;
+    color: #e3e3e3;
+    transform: scale(.9);
+}
+
+.func-content a:hover{
+    background-color: #ff0266;
+    font-weight: 600;
+    color: #e3e3e3;
+    transform: scale(.9);
+}
+
+.functionbox:hover{
+    transform: scale(1.1);
+}
+
+.social i:hover{
+    transform: scale(1.1);
+}
+
+.apktxt a:hover{
+    background-color: #ff0266;
+    font-weight: 600;
+    color: #e3e3e3;
+    transform: scale(.9);
+
+}
+
+
+
+/* ===================================================================== */
+
+
+@media only screen and (max-width: 600px) {
+    #close{
+        display: block;
+    }
+    header nav{
+        position: fixed;
+        background-color: #1d1d1d;
+        height: 70vh;
+        top: 0;
+        right: 100%;
+        margin: 0;
+        padding: 24px 0;
+        z-index: 10;
+        transition: 0.5s;
+        border-radius: 55px 0 0 95px;
+        width: 60%;
+        box-shadow: 0 2px 2px -2px rgb(55, 52, 52); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 1s;
+    }
+
+    header h2{
+        font-size: 20px;
+    }
+
+    #navbar{
+        display: flex;
+        margin: 0 30px;
+        font-size: 28px;
+        color: #e2e2e2;
+    }
+
+    .show{
+        display: block;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+        transition: 0.6;
+
+    }
+
+    .show #close{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+        font-size: 22px;
+        color: #e2e2e2;
+    }
+
+    .show a{
+        padding: 20px;
+        font-weight: 400;
+    }
+
+    .mainbox h1{
+        font-size: 2.3rem;
+    }
+
+    .mainbox span{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .maintext{
+        padding: 5px;
+    }
+
+    .maintext p{
+        font-size: 1.1rem;
+    }
+
+    .social i{
+        padding: 0 10px;
+        font-size: 30px;
+    }
+
+    .functionbox{
+        width: 181px;
+    }
+
+    .funcimg i{
+        font-size: 50px;
+    }
+
+    .func-content h2{
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .func-content a{
+        padding: 15px 5px;
+        margin: 12px 0px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background: transparent; 
+        border-radius: 8px;
+        color: #ff0266;
+        transition: 0.2;
+        transition-property: background;
+        border: 2px solid #ff0266;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .apkimg img{
+        max-width: 70%;
+    }
+
+    .apktxt h1{
+        font-size: 26px;
+    }
+
+    .apktxt p{
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (min-width: 600px) {
+    .functionbox{
+        width: 260px;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    .functionbox{
+        width: 267px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .functionbox{
+        width: 400px;
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+    .functionbox{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .functionbox{
+        width: 150px;
+    }
+}
+
